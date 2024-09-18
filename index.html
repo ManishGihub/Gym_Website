@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gym Website</title>
+    <style>
+      body {
+        font-family: "Ununtu", sans-serif;
+        background-image: url("img/logo.jpg");
+        background-size: 100%;
+        color: white;
+      }
+
+      .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        width: 100px;
+        position: absolute;
+        left: 10px;
+        top: 2px;
+        text-align: center;
+      }
+
+      .logo {
+        filter: invert(100%);
+        width: 90px;
+        border-radius: 50px;
+      }
+
+      .left p {
+        line-height: 0;
+        position: absolute;
+        bottom: 2px;
+        left: 7px;
+      }
+      .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 30%;
+        margin: 47px auto;
+        font-weight: bold;
+      }
+
+      .mid ul {
+        list-style: none;
+      }
+
+      .mid ul li {
+        display: inline;
+        margin: 20px;
+      }
+
+      .mid ul a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .mid ul a:hover {
+        color: grey;
+      }
+
+      .mid ul a:active {
+        text-decoration: underline;
+        color: grey;
+      }
+
+      .right {
+        position: absolute;
+        right: 20px;
+        top: 48px;
+        display: inline-block;
+        width: 200px;
+        /* border: 2px solid yellow; */
+        font-weight: bold;
+      }
+
+      .btn {
+        display: inline;
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 9px;
+      }
+
+      .btn:hover {
+        background-color: rgb(31, 29, 29);
+      }
+
+      .container {
+        width: 33%;
+        border: 3px solid white;
+        padding: 36px 40px;
+        margin: 121px 82px;
+        border-radius: 12px;
+        text-align: center;
+      }
+      .form-input input {
+        width: 50%;
+        display: block;
+        margin: 12px auto;
+        text-align: center;
+        font-size: 17px;
+        border-radius: 6px;
+        padding: 5px;
+      }
+      .submit-btn {
+        width: 53%;
+        display: block;
+        margin: 17px auto;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 6px;
+        padding: 8px;
+        background-color: grey;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="img/gym logo.png" alt="logo" class="logo" />
+        <p>Manish Gym</p>
+      </div>
+      <div class="mid">
+        <div class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="btn">Login</div>
+        <div class="btn">Register</div>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best gym in Nashik</h1>
+      <form action="noaction.php">
+        <div class="form-input">
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <div class="form-input">
+          <input type="text" placeholder="Enter your age" />
+        </div>
+        <div class="form-input">
+          <input type="text" placeholder="Enter your height" />
+        </div>
+        <div class="form-input">
+          <input type="text" placeholder="Enter your weight" />
+        </div>
+        <button class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
